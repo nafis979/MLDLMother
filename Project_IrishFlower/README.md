@@ -1,58 +1,34 @@
-🌸 Iris Species Classification
-A machine learning project using the classic Iris dataset to classify flower species with various models and explore the data visually.
+# Iris Classification Project
 
-📁 Features
-📊 Exploratory Data Analysis:
+This project uses the Iris dataset to build and evaluate machine learning models for species classification.
 
-Boxplots, swarmplots, violin plots
+## Overview
+- **Dataset**: Iris dataset (150 samples, 4 features: sepal length, sepal width, petal length, petal width; 3 species).
+- **Objective**: Classify Iris species using multiple machine learning algorithms.
+- **Tools**: Python, Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib.
 
-Pair plots and correlation heatmaps
+## Features
+- Data exploration with descriptive statistics and visualizations (boxplots, swarmplots, violinplots, correlation heatmap, pairplot, 3D scatter).
+- Models implemented:
+  - Support Vector Machine (SVM)
+  - Logistic Regression
+  - Decision Tree
+  - Random Forest
+- Model evaluation using accuracy, classification report, and confusion matrix.
+- Prediction on new samples with confidence scores, nearest neighbor analysis, z-scores, and Euclidean distance from dataset mean.
 
-3D scatter plot visualization
+## Usage
+1. Install dependencies: `pip install numpy pandas scikit-learn seaborn matplotlib`
+2. Run the Jupyter notebook or Python script to explore data, train models, and test predictions.
 
-🧪 Preprocessing:
+## Key Findings
+- Random Forest achieved high accuracy (~0.97) on the test set.
+- Visualizations reveal clear feature separations between species, especially petal length and width.
+- New sample predictions include confidence and statistical analysis for interpretability.
 
-Mapping numerical labels to species names
+## File Structure
+- `iris_classification.ipynb`: Main notebook with code and visualizations.
+- `README.md`: This file.
 
-Train-test split (80-20)
-
-🤖 Model Training & Evaluation:
-
-Support Vector Machine (SVM)
-
-Logistic Regression
-
-Decision Tree
-
-Random Forest
-
-Accuracy and classification reports
-
-Confusion matrix visualization
-
-🔍 New Sample Prediction:
-
-Predicts species of a new flower sample
-
-Calculates confidence score
-
-Finds nearest training sample
-
-Computes z-scores for features
-
-Measures Euclidean distance from dataset mean
-
-📦 Requirements
-Python 3.x
-
-pandas
-
-numpy
-
-seaborn
-
-matplotlib
-
-scikit-learn
-
-scipy
+## License
+MIT License
