@@ -1,0 +1,16 @@
+# Ignore Python virtual environment
+ml-env/
+
+# Bytecode and cache
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints
+*.ipynb_checkpoints/
+
+# VS Code settings (optional)
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
