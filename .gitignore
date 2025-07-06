@@ -1,16 +1,35 @@
-# Ignore Python virtual environment
+# === Ignore Python virtual environments ===
 ml-env/
 
-# Bytecode and cache
+# === Bytecode and cache ===
 __pycache__/
 *.pyc
 
-# Jupyter notebook checkpoints
+# === Jupyter notebook checkpoints ===
 *.ipynb_checkpoints/
 
-# VS Code settings (optional)
+# === VS Code settings ===
 .vscode/
 
-# System files
+# === System files ===
 .DS_Store
 Thumbs.db
+
+# === Ignore large or unnecessary files ===
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.webp
+*.pkl
+*.pth
+*.h5
+*.log
+
+# === Keep only the important code/data files ===
+!*/**/*.py
+!*/**/*.ipynb
+!*/**/*.csv
+!*/**/*.md
+!*/**/*.txt
