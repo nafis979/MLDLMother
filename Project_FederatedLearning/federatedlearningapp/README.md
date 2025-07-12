@@ -1,41 +1,34 @@
-# Federated Learning Application using Flower and PyTorch 🌸🔥
+Federated Learning Application using Flower and PyTorch 🌸🔥
+A clean and easy-to-run Federated Learning (FL) example built with Flower and PyTorch. This project trains a Convolutional Neural Network (CNN) model collaboratively across multiple virtual clients using the CIFAR-10 dataset.
+⚙️ Tech Stack
 
-A complete and easy-to-run Federated Learning (FL) example built with **Flower** and **PyTorch**. This project trains a CNN model collaboratively across multiple virtual clients on the CIFAR-10 dataset.
+Federated Learning: Flower
+Deep Learning: PyTorch
+Dataset: CIFAR-10 (available via Kaggle or TorchVision)
 
----
+🔧 Installation
 
-## ⚙️ Tech Stack
+Clone the repository:git clone https://github.com/nafis979/MLDLMother.git
+cd MLDLMother/Project_FederatedLearning
 
-- **Federated Learning**: [Flower](https://flower.dev/)
-- **Deep Learning**: [PyTorch](https://pytorch.org/)
-- **Data**: CIFAR-10 dataset (from Kaggle or TorchVision)
 
----
-
-## 🔧 Installation
-
-### Step 1: Clone the repository
-
-git clone https://github.com/nafis979/MLDLMother.git
-cd MLDLMOTHER/Project_FederatedLearning
 
 🗃️ Dataset Setup
 
-Download CIFAR-10 from Kaggle
-Make sure you have the Kaggle CLI set up:
-mkdir -p data/cifar10
+Download the CIFAR-10 dataset from Kaggle. Ensure you have the Kaggle CLI configured.
+Run the following commands to download and unzip the dataset:mkdir -p data/cifar10
 kaggle datasets download -d ayush1220/cifar10 -p data/cifar10 --unzip
 
+
+
 🚀 Running the Project
-
-Local Simulation (Easy start)
-Run both server and clients in one command:
-
+To start a local simulation with both server and clients, use the following command:
 flwr run .
 
-This will start:
-10 local clients (virtual nodes)
-Each client trains on its own shard of CIFAR-10 data
-Federated averaging for 3 rounds (default)
+This will:
 
-Happy Federated Learning! 🌼🔥
+Launch 10 local clients (virtual nodes)
+Train each client on its own shard of the CIFAR-10 dataset
+Perform federated averaging for 3 rounds (default configuration)
+
+🌼 Happy Federated Learning! 🔥
