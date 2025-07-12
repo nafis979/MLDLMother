@@ -4,24 +4,6 @@ A complete and easy-to-run Federated Learning (FL) example built with **Flower**
 
 ---
 
-## 🚩 Project Structure
-
-Project_FederatedLearning/
-├── pyproject.toml # Project configuration
-├── README.md
-├── federatedlearningapp/ # FL application code
-│ ├── init.py
-│ ├── task.py # Data loading, model definition, training & evaluation
-│ ├── client_app.py # Flower client setup
-│ └── server_app.py # Flower server setup
-└── data/
-└── cifar10/
-├── train/ # CIFAR-10 training images
-└── test/ # CIFAR-10 testing images
-
-
----
-
 ## ⚙️ Tech Stack
 
 - **Federated Learning**: [Flower](https://flower.dev/)
