@@ -16,8 +16,8 @@ A complete and easy-to-run Federated Learning (FL) example built with **Flower**
 
 ### Step 1: Clone the repository
 
-git clone https://github.com/yourusername/your-flower-fl-project.git
-cd your-flower-fl-project
+git clone https://github.com/nafis979/MLDLMother.git
+cd MLDLMOTHER/Project_FederatedLearning
 
 🗃️ Dataset Setup
 
