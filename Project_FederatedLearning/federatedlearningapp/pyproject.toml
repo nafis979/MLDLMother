@@ -1,0 +1,36 @@
+# pyproject.toml (updated with publisher)
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "federatedlearningapp"
+version = "1.0.0"
+description = "A Flower / PyTorch app."
+license = "Apache-2.0"
+dependencies = [
+    "flwr[simulation]>=1.19.0",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+]
+
+# Required: Flower project metadata
+[tool.flwr.app]
+publisher = "nafis"
+
+[tool.flwr.app.components]
+serverapp = "federatedlearningapp.server_app:app"
+clientapp = "federatedlearningapp.client_app:app"
+
+[tool.flwr.app.config]
+# Server rounds and client-side settings
+enum-server-rounds = 3
+fraction-fit = 0.5
+local-epochs = 1
+
+[tool.flwr.federations]
+default = "local-simulation"
+
+[tool.flwr.federations.local-simulation]
+options.num-supernodes = 10
